@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master</title>
+
+</head>
+
+<body class="bg-slate-100">
+    <section class="px-4 w-full md:w-11/12 lg:w-3/4 mx-auto">
+        <!-- Income  -->
+        <h2 class="text-center p-4 pb-5 bg-blue-200 capitalize text-2xl md:text-4xl font-medium">calculate your personal
+            expenses</h2>
+
+        <div class="bg-white py-6 pb-10">
+            <h2 class="text-xl md:text-2xl text-center font-medium pb-4">Your Income</h2>
+
+            <div class="px-5 w-full md:w-11/12 lg:w-2/4 mx-auto">
+                <p class="text-lg mb-1 text-stone-900">Income : </p>
+                <input id="income-field" type="text"
+                    class="py-3 px-5 outline-none text-base rounded border-2 w-full text-gray-500">
+            </div>
+
+            <!-- Expenses  -->
+            <h2 class="text-xl mt-6 md:text-2xl text-center font-medium pb-4">Your Expenses</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 px-5 w-full md:w-11/12 lg:w-2/4 mx-auto">
+                <div class="">
+                    <p class="text-lg mb-1 text-stone-900">Food : </p>
+                    <input id="food-field" type="text"
+                        class="py-3 px-5 outline-none text-base rounded border-2 w-full text-gray-500">
+                </div>
+                <div class="">
+                    <p class="text-lg mb-1 text-stone-900">Rent : </p>
+                    <input id="rent-field" type="text"
+                        class="py-3 px-5 outline-none text-base rounded border-2 w-full text-gray-500">
+                </div>
+                <div class="">
+                    <p class="text-lg mb-1 text-stone-900">Clothes : </p>
+                    <input id="clothes-field" type="text"
+                        class="py-3 px-5 outline-none text-base rounded border-2 w-full text-gray-500">
+                </div>
+
+            </div>
+
+            <!-- Button  -->
+            <div class="px-5 w-full md:w-11/12 lg:w-2/4 mx-auto mb-2 mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div>
+                        <button id="calculate-btn"
+                            class="my-3 w-full py-3 px-6 bg-blue-500 text-lg font-medium rounded hover:bg-blue-600 text-white">Calculate</button>
+
+                        <h2 class="text-xl mb-1 text-stone-900">Total Expenses : <span id="total-expenses"
+                                class="font-medium">00</span>
+                        </h2>
+                        <h2 class="text-xl mb-1 text-stone-900">Balance : <span id="balance"
+                                class="font-medium">00</span> </h2>
+                        <h2 class="text-xl mb-1 text-stone-900">Saving Amount : <span id="saving-amount"
+                                class="font-medium">00</span>
+                        </h2>
+                        <h2 class="text-xl mb-1 text-stone-900">Remaining Balance : <span id="remaining-balance"
+                                class="font-medium">00</span>
+                        </h2>
+
+
+                    </div>
+                    <div class="border-2  p-3 mt-3">
+                        <div>
+                            <p class="text-lg mb-1 text-stone-900">Saving : </p>
+                            <input id="saving-field" type="text"
+                                class="py-3 mb-3 px-5 outline-none text-base rounded border-2 w-10/12 mr-1  text-gray-500">
+                            <span class="text-lg font-medium">%</span>
+                        </div>
+
+                        <button id="save-btn"
+                            class=" w-full py-3 px-6 bg-blue-500 text-lg font-medium rounded hover:bg-blue-600 text-white">Save</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" p-4 text-center">&copy; Copyrights 2023 | Sanjoy Sarker</div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
